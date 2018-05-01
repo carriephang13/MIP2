@@ -191,7 +191,7 @@
               return (this.minWidth + this.maxWidth) / 2;
           };
           this.penColor = options.penColor || "black";
-          this.backgroundColor = "#dfdfdf";
+          this.backgroundColor = "#d8d8d8";
           this.onBegin = options.onBegin;
           this.onEnd = options.onEnd;
           this._ctx = canvas.getContext("2d");

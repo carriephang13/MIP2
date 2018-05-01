@@ -191,6 +191,7 @@
               return (this.minWidth + this.maxWidth) / 2;
           };
           this.penColor = options.penColor || "black";
+          this.backgroundColor = options.backgroundColor || "rgba(0,0,0,0)";
           this.onBegin = options.onBegin;
           this.onEnd = options.onEnd;
           this._ctx = canvas.getContext("2d");
@@ -200,7 +201,9 @@
       SignaturePad.prototype.clear = function () {
           var ctx = this._ctx;
           var canvas = this.canvas;
-          ctx.fillStyle = #fff;
+          ctx.fillStyle = this.backgroundColor;
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
           this._data = [];
           this._reset();
           this._isEmpty = true;

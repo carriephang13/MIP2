@@ -202,7 +202,6 @@
           var canvas = this.canvas;
           ctx.fillStyle = #dfdfdf;
           ctx.clearRect(0, 0, canvas.width, canvas.height);
-          ctx.fillRect(0, 0, canvas.width, canvas.height);
           this._data = [];
           this._reset();
           this._isEmpty = true;

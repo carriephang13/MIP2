@@ -22,7 +22,7 @@ body {
           user-select: none;
   margin: 0;
   font-family: Proxima Nova, Sans-Serif;
-  background-color: #dfdfdf;
+  background-color: #d8d8d8;
 }
 
 .signature-pad {
@@ -39,7 +39,7 @@ body {
   height: 100%;
   max-width: 700px;
   max-height: 460px;
-  background-color: #dfdfdf;
+  background-color: #d8d8d8;
 }
 
 .signature-pad::before,
@@ -50,7 +50,7 @@ body {
   width: 40%;
   height: 10px;
   bottom: 10px;
-  background: #dfdfdf;
+  background: #d8d8d8;
 }
 
 .signature-pad::before {
